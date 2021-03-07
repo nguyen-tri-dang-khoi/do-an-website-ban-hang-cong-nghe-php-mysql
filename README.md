@@ -1,0 +1,45 @@
+# do-an-website-ban-hang-cong-nghe-php-mysql
+- Đồ án website bán đồ dùng công nghệ (điện thoại, máy tính , đồng hồ) sử dụng ngôn ngữ lập trình web php và hệ quản trị cơ sở dữ liệu mysql.  
+- Thông tin chung về đồ án:
+  - Ngôn ngữ: php, html, css, javascript.
+  - Hệ quản trị cơ sở dữ liệu: mysql.
+  - Framework hỗ trợ: bootstrap.
+  - Library hỗ trợ: jquery, jquery-ui, DP.php (DP.php là tệp tin nằm trong thư mục lib, có các chức năng chính là kết nối, hỗ trợ các thao tác thêm, xoá, sửa, truy vấn trên cơ sở dữ liệu),....
+  - Giao diện User: dùng template của ColorLibs.
+  - Giao diện Admin: dùng template của AdminLte.
+  - Phần mềm giả lập chạy đồ án: wampserver.
+  - Thông tin đăng nhập để chạy đồ án:
+    - Đăng nhập user:
+      - email: nguyentricuong@gmail.com
+      - password: 12345678
+    - Đăng nhập admin:
+      - email: admin@gmail.com
+      - password: 12345678
+
+  - Tác giả: Nguyễn Trí Đăng Khôi.
+  - Lớp: CĐTH18PMB.
+  - Trường: Cao Đẳng Kỹ Thuật Cao Thắng.
+- Danh sách các chức năng đồ án:
+   - Phân quyền user, admin
+   - Các chức năng bên User:
+     - Đăng nhập, đăng ký (mật khẩu đã được băm, mật khẩu có 6 ký tự trở lên, có kiểm tra ràng buộc không để trống ô nhập), đăng xuất (huỷ toàn bộ SESSION).
+     - Thêm xoá sửa (thay đổi số lượng) sản phẩm trong giỏ hàng, huỷ giỏ hàng (có sử dụng SESSION, có sử dụng ajax).
+     - Cập nhật chỉnh sửa thông tin user (có upload hình ảnh, có kiểm tra ràng buộc không để trống ô, kích thước file, kiểm tra đó có phải file ảnh, nhập mật khẩu cũ xác thực, có sử dụng ajax).
+     - Đổi mật khẩu (mật khẩu đã được băm, mật khẩu có 6 ký tự trở lên, có kiểm tra ràng buộc không để trống, nhập mật khẩu cũ xác thực). 
+     - Hiển thị danh sách đơn hàng để theo dõi tình trạng xử lý đơn hàng (có phân trang, có cho xem chi tiết đơn hàng sử dụng ajax).
+     - Tạo đơn hàng.
+     - Xem chi tiết đơn hàng.
+     - Huỷ đơn hàng (Đối với các đơn hàng có tình trạng thanh toán là "chưa thanh toán").
+     - Hiển thị trên giao diện bán hàng danh sách các "sản phẩm" được phân loại theo "loại sản phẩm".
+     - Xem chi tiết sản phẩm (tên sản phẩm, mô tả sản phẩm, đơn giá, số lượng, các bình luận liên quan).
+     - Thêm bình luận vào sản phẩm (không kiểm tra ràng buộc không để trống ô nhập, có sử dụng ajax).
+     - Hiển thị bình luận của user với từng sản phẩm.
+   - Các chức năng bên Admin:
+      - Đăng nhập, đăng ký (mật khẩu đã được băm, mật khẩu có 6 ký tự trở lên, có kiểm tra ràng buộc không để trống ô nhập), đăng xuất (huỷ toàn bộ SESSION).
+      - Cập nhật chỉnh sửa thông tin admin (có upload hình ảnh, có kiểm tra ràng buộc không để trống ô, kích thước file, kiểm tra đó có phải file ảnh, nhập mật khẩu cũ xác thực, có sử dụng ajax).
+      - Đổi mật khẩu (mật khẩu đã được băm, mật khẩu có 6 ký tự trở lên, có kiểm tra ràng buộc không để trống, nhập mật khẩu cũ xác thực, có sử dụng ajax). 
+      - Thêm xoá sửa loại sản phẩm, hiển thị loại sản phẩm (không phân trang, có kiểm tra ràng buộc không để trống ô nhập, có sử dụng ajax).
+      - Thêm xoá sửa sản phẩm, hiển thị sản phẩm (có phân trang, có kiểm tra ràng buộc không để trống ô nhập, upload hình ảnh, có sử dụng ajax).
+      - Hiển thị danh sách đơn đặt hàng của user (có phân trang).
+      - Với mỗi dòng trong danh sách đơn đặt hàng của user có các thao tác: xem chi tiết đơn hàng, xem thông tin user, cập nhật tình trạng thanh toán của đơn hàng "đã thanh toán".
+  
