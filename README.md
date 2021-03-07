@@ -15,7 +15,7 @@
     - Đăng nhập admin:
       - email: admin@gmail.com
       - password: 12345678
-
+  - link youtube video demo: https://youtu.be/F718lOaoF6U
   - Tác giả: Nguyễn Trí Đăng Khôi.
   - Lớp: CĐTH18PMB.
   - Trường: Cao Đẳng Kỹ Thuật Cao Thắng.
